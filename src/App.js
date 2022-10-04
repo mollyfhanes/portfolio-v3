@@ -7,7 +7,7 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import avatar from './avatar.png'
 import Home from './Home'
-import Skills from './Skills'
+import Skills from './Skills';
 
 function App() {
   const [value, setValue] = React.useState(0)
