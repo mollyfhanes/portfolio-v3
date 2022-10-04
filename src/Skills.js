@@ -1,57 +1,176 @@
+import * as React from 'react'
 import Grid from '@mui/material/Unstable_Grid2'
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 import Icon from './Icon'
 
 export default function Skills() {
-    return (
-        <Grid container sx={{marginTop: '5vh'}}>
-            <Grid>
-                <Container sx={{width: '100%'}}>
-                    <Icon name='ruby' />
-                    <Typography align='center' variant='overline'>Ruby</Typography>
-                </Container>
-            </Grid>
-            <Grid>
-                <Icon name='js' />
-                <Typography variant='overline'>JavaScript</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='node' />
-                <Typography variant='overline'>Node.js</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='python' />
-                <Typography variant='overline'>Python</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='react' />
-                <Typography variant='overline'>ReactJS</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='html' />
-                <Typography variant='overline'>HTML5</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='css' />
-                <Typography variant='overline'>CSS3</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='redux' />
-                <Typography variant='overline'>Redux</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='d3' />
-                <Typography variant='overline'>D3.js</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='mongo' />
-                <Typography variant='overline'>MongoDB</Typography>
-            </Grid>
-            <Grid>
-                <Icon name='postgres' />
-                <Typography variant='overline'>PostgreSQL</Typography>
-            </Grid>
+  return (
+    <React.Fragment>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="ruby" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              Ruby
+            </Typography>
+          </div>
         </Grid>
-    )
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="js" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              JavaScript
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="node" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              Node.js
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="python" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              Python
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="react" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              ReactJS
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="html" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              HTML5
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="css" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              CSS3
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="redux" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              Redux
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="d3" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              D3.js
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="mongo" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              MongoDB
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+      <Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Icon name="postgres" />
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <Typography align="center" variant="overline">
+              PostgreSQL
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+    </React.Fragment>
+  )
 }

@@ -1,26 +1,64 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Container from '@mui/material/Container'
 import Grid from '@mui/material/Unstable_Grid2'
-import Tabs from '@mui/material/Tabs'
-import Tab from '@mui/material/Tab'
+import AppBar from '@mui/material/AppBar'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Button from '@mui/material/Button'
 import avatar from './avatar.png'
 import Home from './Home'
 import Skills from './Skills'
+import About from './About'
 
 function App() {
   const [value, setValue] = React.useState(0)
-  const handleChange = (e, newValue) => setValue(newValue)
 
   return (
-    <Box sx={{ width: '100%', paddingLeft: '5vw', paddingRight: '5vw' }}>
-      <Tabs variant="fullWidth" value={value} onChange={handleChange}>
-        <Tab label="Home" />
-        <Tab label="Skills" />
-        <Tab label="About" />
-        <Tab label="Contact" />
-      </Tabs>
+    <Box sx={{ width: '100%' }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+            onClick={() => {
+              setValue(0)
+            }}
+          >
+            <img
+              src={avatar}
+              alt="software engineer"
+              style={{ height: '5vh' }}
+            />
+          </IconButton>
+          <Button
+            color="inherit"
+            onClick={() => {
+              setValue(1)
+            }}
+          >
+            Skills
+          </Button>
+          <Button
+            color="inherit"
+            onClick={() => {
+              setValue(2)
+            }}
+          >
+            About
+          </Button>
+          <Button
+            color="inherit"
+            onClick={() => {
+              setValue(3)
+            }}
+          >
+            Contact
+          </Button>
+        </Toolbar>
+      </AppBar>
       <Grid
         container
         spacing={5}
@@ -28,9 +66,11 @@ function App() {
         display="flex"
         justifyContent="center"
         alignItems="center"
+        sx={{ marginTop: '5vh', paddingX: '5vw' }}
       >
         {value === 0 && <Home />}
         {value === 1 && <Skills />}
+        {value === 2 && <About />}
       </Grid>
     </Box>
   )
